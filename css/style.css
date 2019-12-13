@@ -40,7 +40,9 @@ h1, h2, h3 {
 .social-icons a {
     margin-right: 26px;
 }
-
+.social-icons a:last-child {
+    margin-right: 0;
+}
 .about-me {
     background-color: #e6eff6;
     padding: 78px 0 68px 0;
@@ -50,7 +52,7 @@ h1, h2, h3 {
     display: flex;
     justify-content: space-between;
     /* border: 2px solid red; */
-    margin-top: 7px;
+    /* margin-top: 7px; */
 }
 .about-me-text {
     flex-basis: 40%;
@@ -167,4 +169,33 @@ h1, h2, h3 {
 .cta a {
     color: #6496e5;
     text-decoration: underline;
+}
+
+/* ------------------INNER PAGE----------------------*/
+
+.header-inner {
+    background-color: #e3f0f7;
+    padding: 47px 0 56px 0;
+    align-items: center;
+}
+.inner-logo {
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+    margin-bottom: 4px;
+}
+.inner-slogan {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+}
+.row-space-between-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project {
+    padding-top: 100px 0 50px 0;
 }
