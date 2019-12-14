@@ -199,3 +199,9 @@ h1, h2, h3 {
 .project {
     padding-top: 100px 0 50px 0;
 }
+.project-title {
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+    text-align: center;
+}
