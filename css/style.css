@@ -4,7 +4,7 @@ body {
     color: #1c1c1c;
     box-sizing: border-box;
 }
-h1, h2, h3 {
+h1, h2, h3, p {
     margin: 0;
     padding: 0;
 }
@@ -51,8 +51,6 @@ h1, h2, h3 {
 .row-space-between {
     display: flex;
     justify-content: space-between;
-    /* border: 2px solid red; */
-    /* margin-top: 7px; */
 }
 .about-me-text {
     flex-basis: 40%;
@@ -197,11 +195,90 @@ h1, h2, h3 {
 }
 
 .project {
-    padding-top: 100px 0 50px 0;
+    padding-top: 100px;
 }
 .project-title {
     font-size: 40px;
     font-weight: 700;
     letter-spacing: 0.4px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.bages-wrapper{              /* Обертка бейджей */
+    text-align: center;
+}
+.bages-wrapper .bage {
+    margin-right: 10px;
+}
+.bage {                      /* Общий класс бейджей */ 
+    font-size: 14px;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    padding: 0 10px;
+    display: inline-block;
+    line-height: 26px;
+    margin-bottom: 35px;
+}
+.bages-wrapper .bage:last-child {
+    margin-right: 0;
+}
+.bage-html {
+    background-color: #ff861a;
+}
+.bage-css {
+    background-color: #039be5;
+}
+.bage-bootstrap {
+    text-transform: capitalize;
+    background-color: #a062c7;
+}
+.project-description {
+    margin: 0 auto;
+    width: 575px;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 1.4;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.project-demo-link {
+    font-size: 22px;
+    font-weight: 300;
+    letter-spacing: 0.3px;
+    line-height: 1.4;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.project-demo-link a {
+    color: #039be5;
+    text-decoration: underline;
+}
+.project-img {
+    text-align: center;
+}
+.pagination {
+    margin-bottom: 25px;
+}
+
+.pagination-btn {
+    text-align: center;            /* Кнопка */
+    height: 80px;
+    width: calc(50% - 5px);
+    /* width: 50%; */
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 80px;
+    color: #039be5;
+    border: 1px solid #d0e9f5;
+    text-decoration: none;
+    transition: border-color 0.2s ease;
+}
+.pagination-btn:hover {
+    border-color:  #ff861a;
+    color: #ff861a;
+}
+.footer-inner {
     text-align: center;
 }
